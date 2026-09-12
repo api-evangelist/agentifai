@@ -1,0 +1,116 @@
+generated: '2026-09-12'
+method: searched
+source: https://trust.agentifai.com/
+note: >-
+  AgentifAI publishes no machine-readable API contract, so nothing here is derived from a spec.
+  Every entry below is read from a first-party published surface: the SafeBase-by-Drata trust
+  center at trust.agentifai.com (certifications and audit reports) and the company's own
+  llms-full.txt (regulatory alignment statements). Entries sourced from the trust center carry
+  basis: certification-listed — the trust center names the certificate and gates the report
+  itself behind a document request, so the certificate is published and the evidence package is
+  not. Entries sourced from prose carry basis: provider-claim and are recorded as claims, not as
+  verified conformance.
+conformance:
+- id: soc2-type-2
+  name: SOC 2 Type 2
+  conforms: true
+  basis: certification-listed
+  evidence: https://trust.agentifai.com/
+  detail: >-
+    Listed as a current certification on the AgentifAI trust center, with a "SOC 2 Report"
+    document available on request.
+- id: iso-27001
+  name: ISO/IEC 27001
+  conforms: true
+  basis: certification-listed
+  evidence: https://trust.agentifai.com/
+  detail: >-
+    Listed as a current certification with an "ISO 27001 Certificate" document available on
+    request.
+- id: iso-42001
+  name: ISO/IEC 42001:2023 (AI management systems)
+  conforms: true
+  basis: certification-listed
+  evidence: https://trust.agentifai.com/
+  detail: >-
+    AI management-system certification listed on the trust center. Relevant to an enterprise AI
+    agent vendor operating in regulated sectors.
+- id: pci-dss-v4
+  name: PCI DSS v4.0.0
+  conforms: true
+  basis: certification-listed
+  evidence: https://trust.agentifai.com/
+  detail: Listed as a current certification on the AgentifAI trust center.
+- id: hipaa
+  name: HIPAA
+  conforms: true
+  basis: certification-listed
+  evidence: https://trust.agentifai.com/
+  detail: >-
+    Listed on the trust center with a "HIPAA BAA Report" document available on request.
+- id: gdpr
+  name: GDPR
+  conforms: true
+  basis: provider-claim
+  evidence: https://www.agentifai.com/llms-full.txt
+  detail: >-
+    "Compliant with GDPR" stated in the company's own llms-full.txt compliance section. EU-
+    headquartered data processor; a privacy policy is published at
+    https://www.agentifai.com/legal/privacy-policy.
+- id: eu-ai-act
+  name: EU AI Act
+  conforms: true
+  basis: provider-claim
+  evidence: https://www.agentifai.com/llms-full.txt
+  detail: Stated regulatory alignment. No published conformity assessment was found.
+- id: dora
+  name: DORA (Digital Operational Resilience Act)
+  conforms: true
+  basis: provider-claim
+  evidence: https://www.agentifai.com/llms-full.txt
+  detail: >-
+    Stated regulatory alignment, relevant because the company is an ICT third-party provider to
+    EU banks (Santander, BPI, Caixa Geral de Depositos).
+- id: psd2
+  name: PSD2
+  conforms: true
+  basis: provider-claim
+  evidence: https://www.agentifai.com/llms-full.txt
+  detail: >-
+    Stated regulatory alignment for banking deployments. NOT a PSD2 API surface — AgentifAI
+    publishes no Berlin Group / STET / UK Open Banking contract and is not an ASPSP or TPP; the
+    claim describes alignment of its agent workflows with PSD2 obligations inside client banks.
+- id: mifid-ii
+  name: MiFID II
+  conforms: true
+  basis: provider-claim
+  evidence: https://www.agentifai.com/llms-full.txt
+  detail: Stated regulatory alignment for banking deployments.
+- id: hds
+  name: HDS (Hebergeur de Donnees de Sante)
+  conforms: true
+  basis: provider-claim
+  evidence: https://www.agentifai.com/llms-full.txt
+  detail: >-
+    "Regional healthcare data protection acts (including HDS frameworks)" — relevant to the
+    French Vivalto Sante deployment. No HDS certificate number was published.
+domain_standards:
+  checked: true
+  found: []
+  note: >-
+    REWARD-ONLY and honestly empty. AgentifAI publishes no contract, so there is nothing in
+    which a domain standard could declare itself. The market standards worth probing if a
+    contract ever appears are HL7 FHIR / HL7v2 (the HIS and EMR/EHR connectors), Berlin Group
+    or STET (the core-banking connectors), and SIP / CSTA (the telephony and CTI adapters) —
+    none of which is named anywhere on the public surface today.
+not_applicable:
+- id: oauth2
+  reason: No published API contract or authorization server to assert an OAuth 2.0 profile against.
+- id: openid-connect
+  reason: No /.well-known/openid-configuration on any AgentifAI-controlled host (all 404).
+- id: rfc9457
+  reason: No published error surface.
+- id: fapi
+  reason: >-
+    Not an ASPSP. AgentifAI integrates with core banking systems as a vendor; it does not expose
+    an open-banking API of its own.

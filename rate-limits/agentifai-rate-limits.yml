@@ -1,0 +1,24 @@
+generated: '2026-09-12'
+method: searched
+source: https://www.agentifai.com/
+limit_count: 0
+note: >-
+  No rate limits are published, and there is no surface on which they could be. AgentifAI
+  exposes no public API, no developer portal, no API reference and no machine-readable contract;
+  every path probed for one returned 404 and no docs/api/developer subdomain resolves in DNS.
+  There are therefore no documented limits, no rate-limit response headers, and no exhaustion
+  status code to record. This is an honest zero derived from the absence of an API surface, not
+  from an undocumented one.
+headers: []
+rate_limits: []
+probes:
+- url: https://www.agentifai.com/openapi.json
+  status: 404
+- url: https://www.agentifai.com/api-docs
+  status: 404
+- url: https://docs.agentifai.com/
+  status: 0
+  note: does not resolve in DNS
+- url: https://api.agentifai.com/
+  status: 0
+  note: does not resolve in DNS

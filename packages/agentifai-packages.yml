@@ -1,0 +1,67 @@
+generated: '2026-09-12'
+method: searched
+source: >-
+  npm registry search, PyPI, and the GitHub user/org search API, cross-checked against the
+  AgentifAI public surface (www.agentifai.com, its sitemap, llms.txt and llms-full.txt).
+package_count: 0
+official_count: 0
+note: >-
+  AgentifAI publishes NO first-party client libraries, and no GitHub organization of its own.
+  This is a deliberate negative finding, not an unchecked gap — the searches returned
+  name-collision candidates that all belong to other parties, recorded below so a later run does
+  not re-adopt them. NO Packages or SDKs pointer is emitted from this file, because there is no
+  package to point at.
+packages: []
+rejected_candidates:
+- name: '@agentifai-oss/* (server, cli, application, domain, telemetry, openai, recorder,
+    storage-sqlite, plugin-api)'
+  registry: npm
+  version: 0.1.0
+  published: '2026-07-25'
+  official: false
+  rejected_because: >-
+    OWNERSHIP FAIL. Every package in the scope resolves to
+    repository https://github.com/Lelianto/agentifai — an individual's personal monorepo, not
+    the Portuguese company. The scope name collides with the provider name and nothing else;
+    no AgentifAI domain, contact or product is named in any package's metadata.
+  evidence: https://registry.npmjs.org/@agentifai-oss%2Fserver
+- name: agentifai-v3-template-generator
+  registry: npm
+  version: 1.0.1
+  published: null
+  official: false
+  rejected_because: >-
+    Name-collision only. No link to agentifai.com in the package metadata and no corroboration
+    on the provider's own surface.
+  evidence: https://www.npmjs.com/package/agentifai-v3-template-generator
+- name: github.com/agentifai-ai
+  registry: github
+  version: null
+  published: null
+  official: false
+  rejected_because: >-
+    A DIFFERENT COMPANY. The org's own metadata names blog https://agentifai.ai and location
+    United Arab Emirates; it was created 2026-09-05 and holds zero public repositories. The
+    provider profiled here is agentifai.com, headquartered in Braga, Portugal. Adopting this org
+    would have credited a UAE namesake's identity to a Portuguese company.
+  evidence: https://api.github.com/orgs/agentifai-ai
+- name: github.com/Agentifai
+  registry: github
+  version: null
+  published: null
+  official: false
+  rejected_because: >-
+    Empty placeholder org created 2023-02-21 with zero public repositories, no name, no blog,
+    no location and no description. Nothing connects it to agentifai.com and there is nothing
+    in it to catalog.
+  evidence: https://api.github.com/orgs/Agentifai
+registries_checked:
+- registry: npm
+  query: agentifai
+  result: 10 hits, 0 first-party
+- registry: pypi
+  query: agentifai
+  result: 404 - no package
+- registry: github
+  query: agentifai
+  result: 3 accounts, 0 first-party

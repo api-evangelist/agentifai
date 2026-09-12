@@ -1,0 +1,69 @@
+generated: '2026-09-12'
+method: searched
+source: https://trust.agentifai.com/
+trust_center:
+  url: https://trust.agentifai.com/
+  platform: SafeBase by Drata
+  discovered_via: >-
+    Linked from the footer of https://www.agentifai.com/aliceos — it is not linked from the
+    homepage, and no subdomain enumeration would have found it because the host sits behind
+    Cloudflare.
+  http_status: 403
+  status_note: >-
+    A raw GET with a browser User-Agent returns a Cloudflare bot-challenge interstitial (403).
+    The page is NOT dead: a rendering fetch returns the full SafeBase trust center with named
+    certifications, document list, subprocessors and a security contact. The 403 is an ordinary
+    edge policy, recorded rather than penalised.
+  self_serve_documents: false
+  document_access: >-
+    Reports are gated behind a "Get access" request form; the certifications themselves are
+    listed publicly.
+certifications:
+- name: SOC 2 Type 2
+  document: SOC 2 Report
+  access: on-request
+- name: ISO/IEC 27001
+  document: ISO 27001 Certificate
+  access: on-request
+- name: ISO/IEC 42001:2023
+  access: listed
+- name: PCI DSS v4.0.0
+  access: listed
+- name: HIPAA
+  document: HIPAA BAA Report
+  access: on-request
+reports:
+- Penetration Test Report
+- Vulnerability Assessment Report
+- SOC 2 Report
+- ISO 27001 Certificate
+- HIPAA BAA Report
+control_categories:
+- product-security
+- data-security
+- access-control
+- infrastructure
+- policies
+- legal
+- ai-governance
+- app-security
+- network-security
+- incident-response
+- business-continuity-and-disaster-recovery
+subprocessors:
+  published: true
+  named:
+  - Atlassian
+  - Twilio
+  - Google Cloud
+  note: >-
+    Twilio and Google Cloud are consistent with the telephony and cloud posture the company
+    describes in its own llms-full.txt (SIP/CTI telephony, deployment across Azure/AWS/GCP).
+security_contact:
+  published: true
+  form: email
+  value: null
+  note: >-
+    A security contact address is displayed on the trust center but was returned obfuscated by
+    the rendering fetch. Recorded as present-but-unread rather than guessed; no address is
+    asserted here.
