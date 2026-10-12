@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/agentifai/integrations
+- https://n8n.io/integrations/agentifai/
+- https://composio.dev/toolkits/agentifai
+- https://monid.ai/tools/agentifai
+checked:
+- https://composio.dev/toolkits/agentifai
+- https://monid.ai/tools/agentifai
+- https://n8n.io/integrations/agentifai/
+- https://zapier.com/apps/agentifai/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
