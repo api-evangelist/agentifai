@@ -2,6 +2,13 @@
   "repo": "agentifai",
   "feeds": [
     {
+      "source": "https://www.agentifai.com/blog",
+      "feed_url": "https://www.agentifai.com/blog",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
       "source": "https://www.agentifai.com/",
       "feed_url": "https://www.agentifai.com/",
       "title": "",
@@ -10,5 +17,5 @@
     }
   ],
   "post_count": 0,
-  "fetched": "2026-10-03T12:30:02Z"
+  "fetched": "2026-10-10T13:15:00Z"
 }
