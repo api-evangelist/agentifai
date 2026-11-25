@@ -80,21 +80,21 @@ Each property below is a page on APIs.io carrying the machine-readable artifact 
 
 Authentication, trust centre, and vulnerability disclosure.
 
-- [Agentifai Domain Security](https://apis.io/security/agentifai/agentifai-domain-security/)
-- [Agentifai Trust Center](https://apis.io/security/agentifai/agentifai-trust-center/)
-- [Agentifai Vulnerability Disclosure](https://apis.io/security/agentifai/agentifai-vulnerability-disclosure/)
+- [AgentifAI Domain Security](https://apis.io/security/agentifai/agentifai-domain-security/)
+- [AgentifAI Trust Center](https://apis.io/security/agentifai/agentifai-trust-center/)
+- [AgentifAI Vulnerability Disclosure](https://apis.io/security/agentifai/agentifai-vulnerability-disclosure/)
 
 #### Plans and pricing (1)
 
 Published plans, tiers and prices.
 
-- [Agentifai Plans Pricing](https://apis.io/plans/agentifai/agentifai-plans-pricing/)
+- [AgentifAI Plans Pricing](https://apis.io/plans/agentifai/agentifai-plans-pricing/)
 
 #### Rate limits (1)
 
 Published request limits.
 
-- [Agentifai Rate Limits](https://apis.io/rate-limits/agentifai/agentifai-rate-limits/)
+- [AgentifAI Rate Limits](https://apis.io/rate-limits/agentifai/agentifai-rate-limits/)
 
 ## Where to find this API
 
@@ -107,18 +107,18 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 14.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+**Kin Score 14.4** — emerging · rubric 0.28.1 · scored 2026-11-21
 
 | Facet | Score |
 |---|---|
 | Discoverability | 55.4 |
 | Contract quality | 0.0 |
 | Contract governance | 18.2 |
-| Operational transparency | 10.5 |
+| Operational transparency | 9.5 |
 | Developer ergonomics | 2.4 |
-| Access clarity | 26.3 |
+| Access clarity | 25.5 |
 
-**Agent readiness 5.4** — agent-aware
+**Agent readiness 5.9** — agent-aware
 
 | Agent-readiness dimension | Result |
 |---|---|
@@ -141,6 +141,12 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Protected Resource Metadata | — |
 | Dynamic Client Registration | — |
 | Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+| MCP Tool Quality | na |
+| Onboarding Descriptor | — |
+| Dns Aid Index | na |
+| Markdown Negotiation | yes |
 
 **Regulatory alignment 19.3** — Banking & Open Finance
 
